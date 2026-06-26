@@ -16,6 +16,27 @@
 
 <br />
 
+## 📋 목차
+ 
+### 가상화 / 스토리지
+ 
+* [vDS(Distributed Switch) 설계](./docs/virtualization/vds-design.md)
+* [TrueNAS iSCSI 스토리지 구성](./docs/storage/truenas-iscsi.md)
+### Core Cluster
+ 
+* [계정계 애플리케이션 배포 (체결 엔진 · 원장시스템)](./docs/core/core-app-deploy.md)
+* [Kafka 구성](./docs/core/kafka.md)
+### DB HA
+ 
+* [MySQL Semi-sync 복제 구성](./docs/db/mysql-semisync.md)
+* [Orchestrator 자동 페일오버](./docs/db/orchestrator.md)
+* [ProxySQL 라우팅 구성](./docs/db/proxysql.md)
+### CI/CD Cluster
+ 
+* [CI/CD 구성](./docs/cicd/overview.md)
+
+<br />
+
 ## 🖥️ 서버 사양
 
 | 구분         | 내용              |
@@ -93,30 +114,4 @@
 9. SonarQube 품질 게이트 통과 후 아티팩트는 Nexus, 이미지는 Harbor에 저장됩니다.
 10. Vault에서 시크릿을 주입받아 빌드·배포가 수행됩니다.
 
-<br />
 
-## 📋 목차
-
-### 가상화 / 스토리지
-
-* [vDS(Distributed Switch) 설계](./docs/virtualization/vds-design.md)
-* [TrueNAS iSCSI 스토리지 구성](./docs/storage/truenas-iscsi.md)
-
-### Core Cluster
-
-* [체결 엔진 구성](./docs/core/matching-engine.md)
-* [원장시스템 구성](./docs/core/ledger-system.md)
-* [Kafka 구성](./docs/core/kafka.md)
-
-### DB HA
-
-* [MySQL Semi-sync 복제 구성](./docs/db/mysql-semisync.md)
-* [Orchestrator 자동 페일오버](./docs/db/orchestrator.md)
-* [ProxySQL 라우팅 구성](./docs/db/proxysql.md)
-
-### CI/CD Cluster
-
-* [GitLab CI 파이프라인](./docs/cicd/gitlab.md)
-* [SonarQube 품질 게이트](./docs/cicd/sonarqube.md)
-* [Nexus / Harbor 구성](./docs/cicd/nexus-harbor.md)
-* [Vault / Ansible AWX 구성](./docs/cicd/vault-awx.md)
